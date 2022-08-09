@@ -95,6 +95,7 @@ section {
     height: 400px;
     text-align: center;
     color: azure;
+    position: relative
 }
 
 section h1 {
@@ -128,6 +129,40 @@ section .form input[type="submit"] {
     font-size: 18px;
 }
 
+section .error-page {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-color: #c4c3d5;
+    border: 1px solid silver;
+    color: #605E87;
+    top: 25%;
+    left: 25%;
+    display: none;
+}
+section .error-page .error-header{
+    position: absolute;
+    height:50px ;
+    width: 100%;
+    top: 0; 
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    font-size: 20px;
+}
+section .error-page .error-header .fa-xmark:hover{
+    cursor: pointer;
+    color: #FE5366;
+}
+section .error-page .error-container{
+    position: absolute;
+    height:150px ;
+    bottom: 0;
+}
+section .error-page .error-container h2{
+    color: #FE5366;
+    margin-bottom:10px ;
+}
 /*
 #ff3f54
 #fd5668
