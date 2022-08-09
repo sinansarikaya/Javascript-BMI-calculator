@@ -120,7 +120,7 @@ section .form input {
 }
 
 section .form input[type="submit"] {
-    background-color: #5DD883;
+    background-color: #5dd782;
     outline: 0;
     border: 0;
     color: azure;
@@ -166,7 +166,7 @@ footer .footer p {
 
 .w3-green {
     color: #fff;
-    background-color: #5DD883;
+    background-color: #5dd782;
     height: 40px;
     line-height: 40px;
     transition: width 2s;

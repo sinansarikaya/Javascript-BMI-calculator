@@ -4,9 +4,8 @@ const info = document.querySelector(".info");
 const footer = document.getElementById("footer");
 const progressBar = document.querySelector(".w3-green");
 
-
 const handleClick = () => {
-  if (height.value && weight.value) {
+  if (height.value && weight.value && height.value <= 300 && height.value >= 30) {
 
     function numberWithCommas(num) {
       return num.toString().replace(/\B(?=(\d{2})+(?!\d))/g, '.');
@@ -26,15 +25,15 @@ const handleClick = () => {
     } else if (index > 17 && index < 18.5) {
       bmi = "Mild Thinness";
       percent = 46;
-      color = "#ffc107";
+      color = "#ffd186";
     } else if (index > 18.5 && index < 25) {
       bmi = "Normal"; //46,25 //62,5
       percent = 50;
-      color = "#28a745";
+      color = "#5dd782";
     } else if (index > 25 && index < 30) {
       bmi = "Overweight";
       percent = 70;
-      color = "#ffc107";
+      color = "#ffd186";
     } else if (index > 30 && index < 35) {
       bmi = "Obese Class I";
       percent = 85;
@@ -55,6 +54,7 @@ const handleClick = () => {
     progressBar.innerHTML = `${bmi}`;
     footer.style.height = "25vh";
 
+    return false;
 
   } else {
     console.log(false)
