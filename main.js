@@ -53,7 +53,7 @@ const handleClick = () => {
     progressBar.style.width = `${percent}%`;
     progressBar.style.backgroundColor = color; `${color}%`;
     progressBar.innerHTML = `${bmi}`;
-    footer.style.height = "30vh";
+    footer.style.height = "25vh";
 
 
   } else {

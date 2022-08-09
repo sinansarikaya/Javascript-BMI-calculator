@@ -46,7 +46,6 @@ header .buttons {
     display: flex;
     gap: 10px;
     align-items: flex-end;
-
 }
 
 header .buttons .btn {
@@ -57,14 +56,12 @@ header .buttons .btn {
     color: azure;
     background-color: #605E87;
     cursor: pointer;
-
 }
 
 header .buttons .btn:hover {
     background-color: #FE5366;
     border: none;
     transition: 1s;
-    ;
 }
 
 header .buttons .btn a {
@@ -75,12 +72,12 @@ header .buttons .btn a {
 
 main {
     width: 90%;
-    height: 50vh;
+    height: 59vh;
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
     gap: 50px;
-    margin: 5vh auto;
+    margin: 0 auto;
 }
 
 aside {
@@ -95,7 +92,7 @@ section {
         radial-gradient(#8A89A9 15%, transparent 16%) 8px 8px;
     background-size: 26px 26px;
     width: 90%;
-    height: 470px;
+    height: 400px;
     text-align: center;
     color: azure;
 }
@@ -137,7 +134,7 @@ section .form input[type="submit"] {
 */
 footer {
     width: 100%;
-    height: 20vh;
+    height: 16vh;
     background-color: #ff6678;
     transition: height 2s;
     position: absolute;
@@ -148,7 +145,7 @@ footer {
 
 footer .footer {
     width: 90%;
-    height: 10vh;
+    height: 12vh;
     margin: 0 auto;
     align-self: center;
 }
@@ -188,3 +185,5 @@ footer .footer p {
     }
 
 }
+
+@media (max-height: 800px) {}
