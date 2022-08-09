@@ -142,13 +142,15 @@ footer {
     transition: height 2s;
     position: absolute;
     bottom: 0;
+    display: flex;
+    align-items: center;
 }
 
 footer .footer {
     width: 90%;
-    height: 20vh;
+    height: 10vh;
     margin: 0 auto;
-    padding-top: 20px;
+    align-self: center;
 }
 
 footer .footer p {
@@ -170,6 +172,9 @@ footer .footer p {
     background-color: #5DD883;
     height: 40px;
     line-height: 40px;
+    transition: width 2s;
+    width: 2%;
+    font-weight: bold;
 }
 
 @media (max-width: 950px) {

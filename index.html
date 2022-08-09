@@ -36,22 +36,21 @@
         <section>
             <h1>Body Mass Index</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptate!
+                Enter your values to see your body mass index.
             </p>
             <div class="form">
                 <input type="number" name="weight" id="weight" placeholder="Weight" required />
-                <input type="number" name="height" id="height" placeholder="Height" required />
+                <input type="number" name="height" id="height" min="10" max="300" placeholder="Height" required />
                 <input type="submit" value="Submit" onclick="handleClick()" />
             </div>
         </section>
     </main>
     <footer id="footer">
         <div class="footer">
-            <p>Your body mass index is 26.45. You are normal person.</p>
-            <div class="w3-light-grey">
-                <div class="w3-green w3-center" style="width:55%">55</div>
-            </div>
             <p class="info"></p>
+            <div class="w3-light-grey">
+                <div class="w3-green w3-center">0</div>
+            </div>
         </div>
     </footer>
     <script src="main.js"></script>
