@@ -1,224 +1,267 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
-    background-color: #605E87;
+  background-color: #605e87;
 }
 
 header {
-    height: 10vh;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 10vh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #logo {
-    width: 90px;
-    height: 50px;
-    transition: width 1s;
-    cursor: pointer;
-    overflow: hidden;
+  width: 90px;
+  height: 50px;
+  transition: width 1s;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 #logo:hover {
-    width: 230px;
+  width: 230px;
 }
 
 header h1 {
-    color: azure;
-    display: flex;
-    gap: 10px;
+  color: azure;
+  display: flex;
+  gap: 10px;
 }
 
 header h1 .logo {
-    color: #FED187;
+  color: #fed187;
 }
 
 header .buttons {
-    display: flex;
-    gap: 10px;
-    align-items: flex-end;
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
 }
 
 header .buttons .btn {
-    height: 40px;
-    width: 40px;
-    border: 2px solid azure;
-    border-radius: 50%;
-    color: azure;
-    background-color: #605E87;
-    cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border: 2px solid azure;
+  border-radius: 50%;
+  color: azure;
+  background-color: #605e87;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
 }
 
 header .buttons .btn:hover {
-    background-color: #FE5366;
-    border: none;
-    transition: 1s;
+  background-color: #fe5366;
+  border: none;
+  transition: background-color 0.5s ease-in-out;
+
 }
 
 header .buttons .btn a {
-    color: azure;
-    text-decoration: none;
-    font-size: 18px;
+  color: azure;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 main {
-    width: 90%;
-    height: 59vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-    gap: 50px;
-    margin: 0 auto;
+  width: 90%;
+  height: 59vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  gap: 50px;
+  margin: 0 auto;
 }
 
 aside {
-    width: 100%;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 section {
-    background:
-        radial-gradient(#8A89A9 15%, transparent 16%) -8px 20px,
-        radial-gradient(#8A89A9 15%, transparent 16%) 8px 8px;
-    background-size: 26px 26px;
-    width: 90%;
-    height: 400px;
-    text-align: center;
-    color: azure;
-    position: relative
+  background: radial-gradient(#8a89a9 15%, transparent 16%) -8px 20px,
+    radial-gradient(#8a89a9 15%, transparent 16%) 8px 8px;
+  background-size: 26px 26px;
+  width: 90%;
+  height: 400px;
+  text-align: center;
+  color: azure;
+  position: relative;
 }
 
 section h1 {
-    color: #FED187;
-    margin: 62px auto 20px;
+  color: #fed187;
+  margin: 62px auto 20px;
 }
 
 section p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 section .form {
-    width: 80%;
-    height: 220px;
-    margin: 35px auto 0;
+  width: 80%;
+  height: 220px;
+  margin: 35px auto 0;
 }
 
 section .form input {
-    width: 100%;
-    height: 50px;
-    padding: 10px;
-    margin-bottom: 20px;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 section .form input[type="submit"] {
-    background-color: #5dd782;
-    outline: 0;
-    border: 0;
-    color: azure;
-    font-weight: bold;
-    font-size: 18px;
+  background-color: #5dd782;
+  outline: 0;
+  border: 0;
+  color: azure;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+  
+}
+section .form input[type="submit"]:hover {
+    background-color: #99e6b0;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 
 section .error-page {
-    position: absolute;
-    width: 300px;
-    height: 200px;
-    background-color: #c4c3d5;
-    border: 1px solid silver;
-    color: #605E87;
-    top: 25%;
-    left: 25%;
-    display: none;
+  position: absolute;
+  width: 400px;
+  height: 150px;
+  background: #fe6778;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid #e1e1ea;
+  color: #e1e1ea;
+  top: 25%;
+  left: 25%;
+  display: none;
+  padding: 0;
 }
-section .error-page .error-header{
-    position: absolute;
-    height:50px ;
-    width: 100%;
-    top: 0; 
-    display: flex;
-    justify-content: flex-end;
-    padding: 15px;
-    font-size: 20px;
+section .error-page .error-header {
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 15px;
+  font-size: 20px;
 }
-section .error-page .error-header .fa-xmark:hover{
-    cursor: pointer;
-    color: #FE5366;
+section .error-page .error-header .fa-xmark:hover {
+  cursor: pointer;
+  color: #c4c3d5;
 }
-section .error-page .error-container{
-    position: absolute;
-    height:150px ;
-    bottom: 0;
+section .error-page .error-container {
+  position: absolute;
+  width: 100%;
+  height: 118px;
+  bottom: 0;
+  text-align: center;
+  padding: 0 20px;
 }
-section .error-page .error-container h2{
-    color: #FE5366;
-    margin-bottom:10px ;
+section .error-page .error-container h2 {
+  color: azure;
+  margin-bottom: 10px;
 }
 /*
 #ff3f54
 #fd5668
 */
 footer {
-    width: 100%;
-    height: 16vh;
-    background-color: #ff6678;
-    transition: height 2s;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  height: 16vh;
+  background-color: #ff6678;
+  transition: height 2s;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
 }
 
 footer .footer {
-    width: 90%;
-    height: 12vh;
-    margin: 0 auto;
-    align-self: center;
+  width: 90%;
+  height: 12vh;
+  margin: 0 auto;
+  align-self: center;
 }
 
 footer .footer p {
-    color: azure;
-    text-align: center;
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 20px;
+  color: azure;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .w3-light-grey {
-    background-color: #f1f1f1;
-    text-align: center;
-    height: 40px;
+  background-color: #f1f1f1;
+  text-align: center;
+  height: 40px;
 }
 
 .w3-green {
-    color: #fff;
-    background-color: #5dd782;
-    height: 40px;
-    line-height: 40px;
-    transition: width 2s;
-    width: 2%;
-    font-weight: bold;
+  color: #fff;
+  background-color: #5dd782;
+  height: 40px;
+  line-height: 40px;
+  transition: width 2s;
+  width: 2%;
+  font-weight: bold;
 }
-
+@media (max-width:1500px) {
+    section .error-page {
+        top: 30%;
+        left: 20%;
+      }  
+}
+@media (max-width:1350px) {
+    section .error-page {
+        top: 30%;
+        left: 15%;
+      }  
+}
+@media (max-width:1185px) {
+    section .error-page {
+        top: 30%;
+        left: 10%;
+      }  
+}
+@media (max-width:1050px) {
+    section .error-page {
+        width: 350px;
+        top: 30%;
+        left: 8%;
+      }  
+}
 @media (max-width: 950px) {
-    main {
-        height: 90vh;
-        grid-template-columns: 100%;
-    }
+  main {
+    height: 90vh;
+    grid-template-columns: 100%;
+  }
+  section .error-page {
+    width: 70%;
+    top: 30%;
+    left: 15%;
+  } 
 
-    footer {
-        bottom: -340px;
-    }
-
+  footer {
+    bottom: -340px;
+  }
 }
 
-@media (max-height: 800px) {}
+@media (max-height: 800px) {
+}

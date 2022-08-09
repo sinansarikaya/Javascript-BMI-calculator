@@ -19,6 +19,8 @@ const handleClick = () => {
     let heightNum = Number(height.value);
     let weightNum = Number(weight.value);
 
+    console.log(heightNum);
+
     if (heightNum >= 250 || heightNum <= 30) {
       showAlert("The height value should be between 30cm and 250cm.");
     } else if (weightNum >= 300 || weightNum <= 0) {
@@ -29,6 +31,7 @@ const handleClick = () => {
       }
       let newHeight = numberWithCommas(Number(height.value));
       let index = weight.value / (newHeight * newHeight);
+      // console.log(index.toFixed(2));
       index = Math.round(index * 100) / 100;
 
       if (index < 16) {
