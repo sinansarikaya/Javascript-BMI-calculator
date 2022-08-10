@@ -68,7 +68,7 @@ const handleClick = () => {
         color = "#dc3545";
       }
 
-      info.innerHTML = `Your body mass index is ${index}. You are ${bmi} person.`;
+      info.innerHTML = `Your body mass index is "<u>${index}</u>". You are ${bmi} person.`;
       progressBar.style.width = `${percent}%`;
       progressBar.style.backgroundColor = color;
       `${color}%`;

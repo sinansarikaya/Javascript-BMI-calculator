@@ -6,11 +6,9 @@
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
 }
-
 body {
   background-color: #605e87;
 }
-
 header {
   height: 10vh;
   width: 90%;
@@ -19,7 +17,6 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 #logo {
   width: 90px;
   height: 50px;
@@ -27,27 +24,22 @@ header {
   cursor: pointer;
   overflow: hidden;
 }
-
 #logo:hover {
   width: 230px;
 }
-
 header h1 {
   color: azure;
   display: flex;
   gap: 10px;
 }
-
 header h1 .logo {
   color: #fed187;
 }
-
 header .buttons {
   display: flex;
   gap: 10px;
   align-items: flex-end;
 }
-
 header .buttons .btn {
   height: 40px;
   width: 40px;
@@ -58,20 +50,16 @@ header .buttons .btn {
   cursor: pointer;
   transition: background-color 0.5s ease-in-out;
 }
-
 header .buttons .btn:hover {
   background-color: #fe5366;
   border: none;
   transition: background-color 0.5s ease-in-out;
-
 }
-
 header .buttons .btn a {
   color: azure;
   text-decoration: none;
   font-size: 18px;
 }
-
 main {
   width: 90%;
   height: 59vh;
@@ -81,13 +69,11 @@ main {
   gap: 50px;
   margin: 0 auto;
 }
-
 aside {
   width: 100%;
   display: flex;
   align-items: center;
 }
-
 section {
   background: radial-gradient(#8a89a9 15%, transparent 16%) -8px 20px,
     radial-gradient(#8a89a9 15%, transparent 16%) 8px 8px;
@@ -97,30 +83,29 @@ section {
   text-align: center;
   color: azure;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
 }
-
 section h1 {
   color: #fed187;
-  margin: 62px auto 20px;
 }
-
 section p {
   font-size: 18px;
 }
-
 section .form {
   width: 80%;
-  height: 220px;
-  margin: 35px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-
 section .form input {
   width: 100%;
   height: 50px;
   padding: 10px;
-  margin-bottom: 20px;
 }
-
 section .form input[type="submit"] {
   background-color: #5dd782;
   outline: 0;
@@ -129,14 +114,12 @@ section .form input[type="submit"] {
   font-weight: bold;
   font-size: 18px;
   transition: 0.5s ease-in-out;
-  
 }
 section .form input[type="submit"]:hover {
-    background-color: #99e6b0;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
+  background-color: #99e6b0;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
-
 section .error-page {
   position: absolute;
   width: 400px;
@@ -191,14 +174,12 @@ footer {
   display: flex;
   align-items: center;
 }
-
 footer .footer {
   width: 90%;
   height: 12vh;
   margin: 0 auto;
   align-self: center;
 }
-
 footer .footer p {
   color: azure;
   text-align: center;
@@ -206,13 +187,11 @@ footer .footer p {
   font-size: 20px;
   margin-bottom: 20px;
 }
-
 .w3-light-grey {
   background-color: #f1f1f1;
   text-align: center;
   height: 40px;
 }
-
 .w3-green {
   color: #fff;
   background-color: #5dd782;
@@ -222,30 +201,30 @@ footer .footer p {
   width: 2%;
   font-weight: bold;
 }
-@media (max-width:1500px) {
-    section .error-page {
-        top: 30%;
-        left: 20%;
-      }  
+@media (max-width: 1500px) {
+  section .error-page {
+    top: 30%;
+    left: 20%;
+  }
 }
-@media (max-width:1350px) {
-    section .error-page {
-        top: 30%;
-        left: 15%;
-      }  
+@media (max-width: 1350px) {
+  section .error-page {
+    top: 30%;
+    left: 15%;
+  }
 }
-@media (max-width:1185px) {
-    section .error-page {
-        top: 30%;
-        left: 10%;
-      }  
+@media (max-width: 1185px) {
+  section .error-page {
+    top: 30%;
+    left: 10%;
+  }
 }
-@media (max-width:1050px) {
-    section .error-page {
-        width: 350px;
-        top: 30%;
-        left: 8%;
-      }  
+@media (max-width: 1050px) {
+  section .error-page {
+    width: 350px;
+    top: 30%;
+    left: 8%;
+  }
 }
 @media (max-width: 950px) {
   main {
@@ -256,7 +235,7 @@ footer .footer p {
     width: 70%;
     top: 30%;
     left: 15%;
-  } 
+  }
 
   footer {
     bottom: -340px;

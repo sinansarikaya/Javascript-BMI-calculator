@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
     <title>BMI Calculator</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div id="logo">
-            <h1>Sinan <span class="logo">Sarıkaya</span></h1>
-        </div>
+      <div id="logo">
+        <h1>Sinan <span class="logo">Sarıkaya</span></h1>
+      </div>
 
-        <div class="buttons">
-            <button class="btn">
-                <a href="https://instagram.com/sinan.sarykaya"><i class="fa-brands fa-instagram"></i></a>
-            </button>
-            <button class="btn">
-                <a href="https://linkedin.com/in/sinansarykaya"><i class="fa-brands fa-linkedin"></i></a>
-            </button>
-            <button class="btn">
-                <a href="https://github.com/sinansarikaya/Javascript-BMI-calculator"><i
-                        class="fa-brands fa-github"></i></a>
-            </button>
-        </div>
+      <div class="buttons">
+        <button class="btn">
+          <a href="https://instagram.com/sinan.sarykaya" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </button>
+        <button class="btn">
+          <a href="https://linkedin.com/in/sinansarykaya" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </button>
+        <button class="btn">
+          <a
+            href="https://github.com/sinansarikaya/Javascript-BMI-calculator"
+            target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </button>
+      </div>
     </header>
 
     <main>
-        <aside>
-            <img src="bmi.png" width="100%" alt="" srcset="">
-        </aside>
-        <section>
-            <h1>Body Mass Index</h1>
-            <p>
-                Enter your values to see your body mass index.
-            </p>
-            <div class="form">
-                <input type="number" name="weight" id="weight" placeholder="Weight" />
-                <input type="number" name="height" id="height" placeholder="Height" />
-                <input type="submit" value="Submit" onclick="handleClick()" />
-            </div>
-            <div class="error-page">
-                <div class="error-header">
-                    <i onclick="closeError()" class="fa-solid fa-xmark"></i>
-                </div>
-                <div class="error-container">
-                    <h2>Error!</h2>
-                    <p class="error-message"></p>
-                </div>
+      <aside>
+        <img src="bmi.png" width="100%" alt="" srcset="" />
+      </aside>
+      <section>
+        <div>
+          <h1>Body Mass Index</h1>
+          <p>Enter your values to see your body mass index.</p>
+        </div>
 
-            </div>
-        </section>
+        <div class="form">
+          <input type="number" name="weight" id="weight" placeholder="Weight" />
+          <input type="number" name="height" id="height" placeholder="Height" />
+          <input type="submit" value="Submit" onclick="handleClick()" />
+        </div>
+        <div class="error-page">
+          <div class="error-header">
+            <i onclick="closeError()" class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="error-container">
+            <h2>Error!</h2>
+            <p class="error-message"></p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="footer">
-        <div class="footer">
-            <p class="info"></p>
-            <div class="w3-light-grey">
-                <div class="w3-green w3-center">0</div>
-            </div>
+      <div class="footer">
+        <p class="info"></p>
+        <div class="w3-light-grey">
+          <div class="w3-green w3-center">0</div>
         </div>
+      </div>
     </footer>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
