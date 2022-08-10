@@ -242,5 +242,13 @@ footer .footer p {
   }
 }
 
-@media (max-height: 800px) {
+@media (max-width: 700px) {
+  section p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  footer .footer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 }
